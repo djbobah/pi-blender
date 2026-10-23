@@ -65,13 +65,13 @@ export default function Home() {
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
           <a
             href="#top"
-            className="font-mono text-[0.78rem] font-semibold uppercase tracking-[0.42em] text-white"
+            className="-my-2 inline-block py-2 font-mono text-[0.78rem] font-semibold uppercase tracking-[0.42em] text-white"
           >
             Nexus
           </a>
           <a
             href="#demo"
-            className="group inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-mono text-[0.62rem] uppercase tracking-[0.2em] text-slate-300 transition-colors hover:border-core-cyan/40 hover:text-white"
+            className="group inline-flex min-h-11 items-center gap-2 rounded-full border border-white/10 px-4 py-2 font-mono text-[0.62rem] uppercase tracking-[0.2em] text-slate-300 transition-colors hover:border-core-cyan/40 hover:text-white sm:min-h-0"
           >
             Запустить демо
             <ArrowIcon />
@@ -88,6 +88,10 @@ export default function Home() {
           <div
             aria-hidden="true"
             className="core-halo pointer-events-none absolute inset-0"
+          />
+          <div
+            aria-hidden="true"
+            className="noise pointer-events-none absolute inset-0"
           />
 
           <div className="relative mx-auto w-full max-w-6xl px-5 pb-12 pt-8 sm:px-8 sm:pb-20 sm:pt-14 lg:pb-24">
@@ -120,7 +124,7 @@ export default function Home() {
                   {proofPoints.map((point) => (
                     <li
                       key={point}
-                      className="flex items-center gap-2 font-mono text-[0.6rem] uppercase tracking-[0.22em] text-slate-500"
+                      className="flex items-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-slate-500"
                     >
                       <span
                         aria-hidden="true"
@@ -166,7 +170,7 @@ export default function Home() {
                     <span className="font-mono text-[0.62rem] tracking-[0.28em] text-slate-500">
                       {item.index}
                     </span>
-                    <span className="font-mono text-[0.55rem] uppercase tracking-[0.24em] text-core-cyan/60">
+                    <span className="font-mono text-[0.65rem] uppercase tracking-[0.2em] text-core-cyan/60">
                       {item.tag}
                     </span>
                   </div>
@@ -256,7 +260,7 @@ export default function Home() {
           <span className="font-mono text-[0.62rem] uppercase tracking-[0.42em] text-slate-300">
             Nexus
           </span>
-          <span className="font-mono text-[0.6rem] uppercase tracking-[0.24em] text-slate-500">
+          <span className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-slate-500">
             Агентная среда выполнения для продуктовых команд
           </span>
         </div>
