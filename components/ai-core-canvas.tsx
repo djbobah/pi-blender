@@ -205,7 +205,7 @@ export function AiCoreCanvas() {
           </Canvas>
         </Suspense>
       </SceneBoundary>
-      <p className="pointer-events-none absolute inset-x-0 bottom-0 text-center font-mono text-[0.55rem] uppercase tracking-[0.28em] text-slate-600">
+      <p className="pointer-events-none absolute inset-x-0 bottom-0 text-center font-mono text-[0.65rem] uppercase tracking-[0.22em] text-slate-600">
         Потяните, чтобы вращать
       </p>
     </div>
